@@ -128,7 +128,15 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   margin: 0 auto;
 }
 
+.WEHeader{
+  display: inline-block;
+}
 
+.resumeLink{
+  display: inline-block;
+  margin-left: 100px;
+
+}
 /* Utility */
 .chromeframe {
   margin: 0.2em 0;
@@ -743,4 +751,71 @@ Change widths as necessary
   @page {margin: 0.5cm}
   p, h2, h3 {orphans: 3; widows: 3}
   h2, h3{page-break-after: avoid}
+}
+
+
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:700";
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.resumeButton{
+  display: inline-block;
+  vertical-align: center;
+  margin-left: 50px;
+  margin-bottom: 10px;
+
+}
+
+.myButt {
+  outline: none;
+  border: none;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: transparent;
+  position: relative;
+  border: 2px solid #fff;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+}
+
+.one {
+  background-color: black;
+  border-color: #fff;
+  overflow: hidden;
+  color: #fff;
+}
+.one .insider {
+  background-color: #fff;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: -135px;
+  transform: rotateZ(45deg);
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+}
+.one:hover {
+  background-color: #F44336;
+  border-color: #fff;
+  color: #fff;
+}
+.one:hover .insider {
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  left: 135px;
 }
